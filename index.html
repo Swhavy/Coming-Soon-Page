@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Coming Soon</h2>
+  <h1>Our Brand New <br> Website is on it's way</h1>  
+  <h3>Subscribe for more details</h3>
+  <form  name="submit-to-google">
+    <input type="email" placeholder="Input your email address" name="Email" id="Email">
+    <button type="submit"><img src="./Image/send-icon.png"></button>
+  </form>
+  <div class="msg" id="msg">Thanks For Subscribing</div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxNxSgG456eDz5iAWrCE1HzKI3dhDBgIwlICZw9y34-dnkznXIyF5HQjaXoLHwE1BjT7g/exec'
+    const form = document.forms['submit-to-google']
+    const subMsg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form),  mode: 'no-cors', })
+        .then(response => {subMsg.style.display = 'block'
+          setTimeout(function() {
+            subMsg.innerHTML = ''
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

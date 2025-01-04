@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    }
+    
+    body{
+        height: 100vh;
+        background-image:linear-gradient(rgba(0, 0, 18, 0.8), rgba(0,0,0,0.8)), url(/Image/background.png) ;
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 130px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+    }
+    
+    h1{
+        font-size: 40px;
+        margin: 5px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    h3{
+        font-size: 16px;
+    }
+    
+    form{
+        margin-top: 20px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    form input{
+        width: 240px;
+        height: 50px;
+        border-radius: 15px;
+        border: 0;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 110px ;
+    }
+    
+    form button{
+        background-color: rgb(16, 207, 10);
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 260px;
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0 ;
+        border: 0;
+        outline: none;
+        /* display: none; */
+        
+    }
+    
+    form button img{
+        width:40px ;
+        height: 40px;
+    }
+
+    .msg{
+        display: none;
+        color: rgb(6, 168, 6);
+        font-size: 16px;
+        margin-top: 5px;
+    }
