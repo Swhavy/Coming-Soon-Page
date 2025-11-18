@@ -46,5 +46,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Author
 
-Created by [Web Suavers © 2024](https://github.com/yourusername). Feel free to contribute or provide feedback!
+Created by [Web Suavers © 2024](https://github.com/Swhavy). Feel free to contribute or provide feedback!
 
